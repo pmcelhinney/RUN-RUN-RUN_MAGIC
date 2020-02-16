@@ -3,7 +3,7 @@ body{
 	text-align:center;
 	font-family:Didot, serif;
 	background-color:white;
-background-image: url("./runshoe.jpg.png");
+background-image: url("./runshoe.png");
 background-size: cover;
 
 
@@ -29,7 +29,8 @@ div.b {
 
 img{
 float:left;
-padding:11px 0;
+padding:15px;
+margin-left:50px;
 }
 
 .container{
@@ -37,9 +38,7 @@ width:80%;
 margin: 0 auto;
 }
 
-nav{
-float:right;
-}
+
 
 header::after{
 content:'';
@@ -47,17 +46,17 @@ display:table;
 clear:both;
 }
 
-nav ul {
+nav ul{
 margin:0;
 padding:0;
 list-style:none;
 }
 
 nav li{
+float:right;
 display: inline-block;
-margin-left:70px;
+margin-right:80px;
 padding-top:42px;
-
 position:relative;
 }
 
@@ -87,7 +86,7 @@ nav a:hover::before{
 width:100%;
 }
 
-#title{
+.title{
 font-family:Optima, sans-serif;
 font-size:8.3em;
 font-weight:800;
@@ -102,14 +101,14 @@ background-position:center;
 .boxed{
 background-color:#aa6dde;
 border:0;
-padding:130px;
-padding-botton:30px;
+padding-top:130px;
+padding-bottom:135px;
 margin-top:10px;
 margin-bottom:10px;
 opacity: 0.775;
 }
 
-#SetGoals{
+.SetGoals{
 font-family:Optima, sans-serif;
 font-size:4em;
 font-weight:800;
@@ -216,7 +215,7 @@ top:50%;
 transform:translateX(10px) translateY(-100px);
 }
 
-#PlanRuns{
+.PlanRuns{
 font-family:Optima, sans-serif;
 font-size:4em;
 font-weight:800;
