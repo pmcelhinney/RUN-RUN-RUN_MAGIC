@@ -1,6 +1,24 @@
 <html>
 <head>
   <title>RUN RUN RUN</title>
+  <script type="text/javascript">
+    function moveimage(position)
+    {
+      var pos= position+100;
+      document.getElementById("img1").style.left=pos+"px";
+    }
+
+    function crossline()
+    {
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      document.getElementById("confetti").setAttribute("src", "img/confetti.gif");
+      document.getElementById("confetti").style.height=h;
+      document.getElementById("confetti").style.width=w;
+      document.getElementById("confetti").style.display='block';
+    }
+
+  </script>
   <meta charset="utf-8"/>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 <link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -14,7 +32,7 @@
    <li><a href="./PlanRuns.html">Plan Runs</a></li>
    <li><a href="./SetGoals.html">Set Goals</a></li>
   <li><a href="./MainPage.html">Home</a></li>
-<img src="logo.png">
+<img src="img/logo.png">
 </ul>
 </nav>
     </div>
@@ -22,19 +40,24 @@
 <div class="boxed11">
 <div class="SetGoals"> SET GOALS </div>
 <h2>Setting goals and reaching is a very important part of running. Write in your top six goals here, and <br>each time you reach a one, the runner icon will move forward to your next goal.</h2>
-<div class="button"><br>1ST GOAL REACHED!</div>
-<div class="button2"><br>2ND GOAL REACHED!</div>
-<div class="button3"><br>3RD GOAL REACHED!</div>
-<div class="button4"><br>4TH GOAL REACHED!</div>
-<div class="button5"><br>5TH GOAL REACHED!</div>
-<div class="button6"><br>6TH GOAL REACHED!</div>
-<div class="boxed2"><br>Write your 1st goal here.</div>
-<div class="boxed3"><br>Write your 2nd goal here.</div>
-<div class="boxed6"><br>Write your 3rd goal here.</div>
-<div class="boxed7"><br>Write your 4th goal here.</div>
-<div class="boxed8"><br>Write your 5th goal here.</div>
-<div class="boxed9"><br>Write your 6th goal here.</div>
-<div class="boxed10"><br>GOALS REACHED!</div>
+<div id="img1" style="position:absolute;left:-20px"><img src="img/run.gif" height="100" width="100/"></div>
+<input type="button" class="buttonclass button1" value="1ST GOAL REACHED!" onclick="moveimage(80)"/>
+<input type="button" class="buttonclass button2" value="2ND GOAL REACHED!" onclick="moveimage(280)"/>
+<input type="button" class="buttonclass button3" value="3RD GOAL REACHED!" onclick="moveimage(480)"/>
+<input type="button" class="buttonclass button4" value="4TH GOAL REACHED!" onclick="moveimage(680)"/>
+<input type="button" class="buttonclass button5" value="5TH GOAL REACHED!" onclick="moveimage(880)"/>
+<input type="button" class="buttonclass button6" value="6TH GOAL REACHED!" onclick="moveimage(1090);crossline()"/>
+<div id="confetti" style="position:absolute;left:1090px"><img src="img/confetti.gif" style="display:none;"/></div>
+<textarea class="textclass boxed2">First Goal:</textarea>
+<textarea class="textclass boxed3">Second Goal:</textarea>
+<textarea class="textclass boxed6">Third Goal:</textarea>
+<textarea class="textclass boxed7">Fourth Goal:</textarea>
+<textarea class="textclass boxed8">Fifth Goal:</textarea>
+<textarea class="textclass boxed9">Sixth Goal:</textarea>
+
+<div class="boxed10" id="finalbox"><br>GOALS REACHED!
+  <div id="finishLine"><img src="img/finishLine.jpg" height="30" width="35/" class="center"/></div>
+</div> 
 </div>
 </div>
 </body>

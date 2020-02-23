@@ -90,28 +90,6 @@ nav a:hover::before{
 width:100%;
 }
 
-#title{
-font-family:Optima, sans-serif;
-font-size:8.3em;
-font-weight:800;
-margin-bottom: 0px;
-margin-top:4px;
-color:transparent;
-background-image:url(https://media.giphy.com/media/fUvfA0iLgy8qCGuvF2/giphy.gif);
-background-position:center;
--webkit-background-clip:text;
-}
-
-.boxed{
-background-color:#aa6dde;
-border:0;
-padding:130px;
-padding-botton:30px;
-margin-top:10px;
-margin-bottom:10px;
-opacity: 0.775;
-}
-
 .SetGoals{
 font-family:Optima, sans-serif;
 font-size:4em;
@@ -124,9 +102,9 @@ background-position:center;
 -webkit-background-clip:text;
 }
 
-.button {
+.buttonclass {
 float:right;
-  background-color:#aa6dde;
+  background-color:#7f3fb5;
 color:black;
 display:block;
 height:122px;
@@ -136,62 +114,37 @@ border:0px;
     margin:0 auto;
 position:absolute;
 top:50%;
-transform:translateX(40px) translateY(225px);
 text-decoration:none;
 font-family:Impact, fantasy;
-font-size:1.5rem;
+font-size:0.9rem;
 }
 
-.button:hover{
+.buttonclass:hover{
 background-color:#e075cb;
+}
+
+.button1 {
+transform:translateX(40px) translateY(225px);
 }
 
 .button2 {
-float:right;
-  background-color:#aa6dde;
-color:black;
-display:block;
-height:122px;
-width:122px;
-border-radius:50%;
-border:0px;
-    margin:0 auto;
-position:absolute;
-top:50%;
 transform:translateX(245px) translateY(225px);
-text-decoration:none;
-font-family:Impact, fantasy;
-font-size:1.5rem;
 }
 
-.button2:hover{
-background-color:#e075cb;
+.button3 {
+transform:translateX(440px) translateY(225px);
 }
 
-.boxed2{/*Text Box*/
-background-color:#e075cb;
-padding-bottom:30px;
-padding-top:30px;
-margin-top:10px;
-margin-left:640px;
-margin-right:640px;
-top:50%;
-left:50%;
-transform:translateX(-600px)translateY(135px);
-border-style:solid;
+.button4 {
+transform:translateX(643px) translateY(225px);
 }
 
-.boxed3{/*Text Box*/
-background-color:#e075cb;
-padding-bottom:30px;
-padding-top:30px;
-margin-top:10px;
-margin-left:640px;
-margin-right:640px;
-top:50%;
-left:50%;
-transform:translateX(-400px)translateY(-0px);
-border-style:solid;
+.button5 {
+transform:translateX(843px) translateY(225px);
+}
+
+.button6 {
+transform:translateX(1043px) translateY(225px);
 }
 
 .boxed4{
@@ -209,7 +162,7 @@ opacity:100%;
 
 #img1{
 top:50%;
-transform:translateX(10px) translateY(100px);
+transform:translateX(10px) translateY(-15px);
 }
 
 .PlanRuns{
@@ -234,154 +187,52 @@ padding-top:10px;
 opacity: 0.775;
 }
 
-.boxed6{ /*Text Box*/
-background-color:#e075cb;
-padding-bottom:30px;
-padding-top:30px;
+.textclass {
+ background-color:#e075cb;
+padding-bottom:60px;
+padding-top:2px;
 margin-top:10px;
 margin-left:640px;
 margin-right:640px;
 top:50%;
 left:50%;
-transform:translateX(-200px)translateY(-136px);
-border-style:solid;
+border:black; 
+font-family:Didot, serif;
+text-align:center;
+}
+
+.boxed2{/*Text Box*/
+transform:translateX(-610px)translateY(134px);
+}
+
+.boxed3{/*Text Box*/
+transform:translateX(-410px)translateY(36px);
+}
+
+.boxed6{ /*Text Box*/
+transform:translateX(-210px)translateY(-63px);
 }
 
 .boxed7{ /*Text Box*/
-background-color:#e075cb;
-padding-bottom:30px;
-padding-top:30px;
-margin-top:10px;
-margin-left:640px;
-margin-right:640px;
-top:50%;
-left:50%;
-transform:translateX(0px)translateY(-272px);
-border-style:solid;
-}
-
-.button3 {
-float:right;
-  background-color:#aa6dde;
-color:black;
-display:block;
-height:122px;
-width:122px;
-border-radius:50%;
-border:0px;
-    margin:0 auto;
-position:absolute;
-top:50%;
-transform:translateX(440px) translateY(225px);
-text-decoration:none;
-font-family:Impact, fantasy;
-font-size:1.5rem;
-}
-
-.button3:hover{
-background-color:#e075cb;
-}
-
-.button4 {
-float:right;
-  background-color:#aa6dde;
-color:black;
-display:block;
-height:122px;
-width:122px;
-border-radius:50%;
-border:0px;
-    margin:0 auto;
-position:absolute;
-top:50%;
-transform:translateX(643px) translateY(225px);
-text-decoration:none;
-font-family:Impact, fantasy;
-font-size:1.5rem;
-}
-
-.button4:hover{
-background-color:#e075cb;
-}
-
-.button5 {
-float:right;
-  background-color:#aa6dde;
-color:black;
-display:block;
-height:122px;
-width:122px;
-border-radius:50%;
-border:0px;
-    margin:0 auto;
-position:absolute;
-top:50%;
-transform:translateX(843px) translateY(225px);
-text-decoration:none;
-font-family:Impact, fantasy;
-font-size:1.5rem;
-}
-
-.button5:hover{
-background-color:#e075cb;
-}
-
-.button6 {
-float:right;
-  background-color:#aa6dde;
-color:black;
-display:block;
-height:122px;
-width:122px;
-border-radius:50%;
-border:0px;
-    margin:0 auto;
-position:absolute;
-top:50%;
-transform:translateX(1043px) translateY(225px);
-text-decoration:none;
-font-family:Impact, fantasy;
-font-size:1.5rem;
-}
-
-.button6:hover{
-background-color:#e075cb;
+transform:translateX(-5px)translateY(-161px);
 }
 
 .boxed8{ /*Text Box*/
-background-color:#e075cb;
-padding-bottom:30px;
-padding-top:30px;
-margin-top:10px;
-margin-left:640px;
-margin-right:640px;
-top:50%;
-left:50%;
-transform:translateX(200px)translateY(-408px);
-border-style:solid;
+transform:translateX(195px)translateY(-259px);
 }
 
 .boxed9{ /*Text Box*/
-background-color:#e075cb;
-padding-bottom:30px;
-padding-top:30px;
-margin-top:10px;
-margin-left:640px;
-margin-right:640px;
-top:50%;
-left:50%;
-transform:translateX(400px)translateY(-543px);
-border-style:solid;
+transform:translateX(395px)translateY(-357px);
 }
 
 .FinishLine{
 padding-top:40px;
 }
 
-.boxed10{/*MAKE FLASH PINK/PURPLE/WHITE WHEN GOALS ARE REACHED!!*/
+.boxed10{
 background-color:#e075cb;
-padding-bottom:90px;
-padding-top:90px;
+padding-bottom:70px;
+padding-top:60px;
 padding-left:20px;
 padding-right:20px;
 margin-top:10px;
@@ -389,14 +240,14 @@ margin-left:640px;
 margin-right:640px;
 top:50%;
 left:50%;
-transform:translateX(600px)translateY(-695px);
+transform:translateX(600px)translateY(-456px);
 border-style:solid;
 font-family:Optima, sans-serif;
 font-weight:920;
 }
 
 .boxed11{
-background-color:#ccecff;
+background-color:#aa6dde;
 margin-top:10px;
 margin-bottom:10px;
 padding-bottom:10px;
@@ -423,4 +274,22 @@ top:50%;
 left:50%;
 opacity:0.775;
 padding-bottom: 10px;
+}
+
+.finishLine{
+  transform:translateX(50px)translateY(-456px);
+}
+
+.center{
+	display:block;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.boxed14{
+	margin:10px;
+	padding:10px;
+	background-color:#e075cb;
+	margin-left:300px;
+	margin-right:300px;
 }
