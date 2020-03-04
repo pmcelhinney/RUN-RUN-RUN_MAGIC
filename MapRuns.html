@@ -23,10 +23,29 @@
 <div class="PlanRuns"> MAP RUNS </div>
 <h2>Mapping runs helps you make sure that you run the distance you want to in the end!</h2>
 <div class="boxed14">
-<div class="Map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d39364597.33978429!2d-111.5370013759212!3d28.889250854362324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1581874637023!5m2!1sen!2sus" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
 </div>
 </div>
 
+<script>
+  function initMap() {
+  }
+
+  var uluru = {lat: -25.344, lng: 131.036};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: uluru
+  });
+
+  var marker = new google.maps.Marker({
+  position: uluru,
+  map: map
+}); 
+</script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d39364597.33978429!2d-111.5370013759212!3d28.889250854362324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1581874637023!5m2!1sen!2sus&callback=initMap">
+</script>
 </div>
 </div>
 </body>
