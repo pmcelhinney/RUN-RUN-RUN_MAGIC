@@ -8,16 +8,6 @@
       document.getElementById("img1").style.left=pos+"px";
     }
 
-    function crossline()
-    {
-      var w = window.innerWidth;
-      var h = window.innerHeight;
-      document.getElementById("confetti").setAttribute("src", "img/confetti.gif");
-      document.getElementById("confetti").style.height=h;
-      document.getElementById("confetti").style.width=w;
-      document.getElementById("confetti").style.display='block';
-    }
-
   </script>
   <meta charset="utf-8"/>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -46,8 +36,24 @@
 <input type="button" class="buttonclass button3" value="3RD GOAL REACHED!" onclick="moveimage(480)"/>
 <input type="button" class="buttonclass button4" value="4TH GOAL REACHED!" onclick="moveimage(680)"/>
 <input type="button" class="buttonclass button5" value="5TH GOAL REACHED!" onclick="moveimage(880)"/>
-<input type="button" class="buttonclass button6" value="6TH GOAL REACHED!" onclick="moveimage(1090);crossline()"/>
-<div id="confetti" style="position:absolute;left:1090px"><img src="img/confetti.gif" style="display:none;"/></div>
+<input type="button" class="buttonclass button6" id= "finalbutton" value="6TH GOAL REACHED!" onclick="moveimage(1090);"/>
+ <img src="img/confetti.gif" class="hidden" id="confetti">
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $.fn.center = function () {
+        this.css("position","absolute");
+        this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
+        this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+        return this;
+      }
+
+      $("#finalbutton").on("click", function(){
+        $("#confetti").fadeIn().center();
+        setTimeout(function(){
+          $("#confetti").fadeOut()
+        }, 1000);
+      });
+    </script>
 <textarea class="textclass boxed2">First Goal:</textarea>
 <textarea class="textclass boxed3">Second Goal:</textarea>
 <textarea class="textclass boxed6">Third Goal:</textarea>
